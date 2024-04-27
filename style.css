@@ -16,6 +16,6 @@ img {
     height: 100%;
     display: block;
     top: 0;
-    bottom: -50px;
+    bottom: -500px;
     object-fit: fill;
 }
