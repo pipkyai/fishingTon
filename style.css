@@ -5,7 +5,6 @@ div {
     height: 100%;
     position: relative;
     object-fit: fill;
-    bottom: -500px;
     background-size: 100% 90%;
 }
 
