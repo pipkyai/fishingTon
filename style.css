@@ -4,6 +4,8 @@ div {
     display: block;
     height: 100%;
     position: relative;
+    background-size: cover;
+
 }
 
 img {
