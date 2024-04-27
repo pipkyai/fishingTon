@@ -4,7 +4,7 @@ div {
     display: block;
     height: 100%;
     position: relative;
-    object-fit: contain;
+    object-fit: fill;
 
 }
 
@@ -16,5 +16,5 @@ img {
     height: 100%;
     display: block;
     padding: 0;
-    object-fit: contain;
+    object-fit: fill;
 }
