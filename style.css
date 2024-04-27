@@ -5,7 +5,7 @@ div {
     height: 100%;
     position: relative;
     object-fit: fill;
-
+    margin-bottom: -500px;
 }
 
 img {
