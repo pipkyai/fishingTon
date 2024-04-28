@@ -33,11 +33,3 @@ div {
     height: 50px;
 }
 
-p{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: auto;
-    height: 30px;
-    text-align: center;
-}
