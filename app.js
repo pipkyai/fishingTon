@@ -1,10 +1,9 @@
-let tg = window.Telegram.WebApp;
+function setThemeClass() {
+    document.documentElement.className = Telegram.WebApp.colorScheme;
+}
 
-
-tg.expand();
-tg.MainButton.text = "Changed Text"
-
-
+Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+setThemeClass();
 function callMe(){
     alert("Hello World!");
 }
