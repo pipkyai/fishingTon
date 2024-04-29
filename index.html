@@ -19,8 +19,12 @@
         <img class="hook" onclick="callMe()" src="https://cdn-icons-png.flaticon.com/128/4664/4664894.png" alt=''>
     </div>
 
-<script>
-</script>
+    <script type="text/javascript">
+        if (window["Telegram"]) {
+            window["Telegram"].WebApp.ready();
+            window["Telegram"].WebApp.expand();
+        }
+    </script>
 
 </body>
 </html>
