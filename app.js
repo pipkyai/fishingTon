@@ -1,6 +1,6 @@
 const tg = window.Telegram.WebApp;
 
 function callMe(){
-    alert("Hello World!");
-    alert(tg.initDataUnsafe?.user?.username);
+    var welcome = 'Hello ' +  tg.initDataUnsafe?.user?.username
+    alert(welcome);
 }
