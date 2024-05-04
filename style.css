@@ -45,7 +45,7 @@ div {
     height: 100px;
 }
 
-.username{
+#username{
     position: absolute;
     top: 5%;
     left: 5%;
