@@ -9,3 +9,8 @@ function callMe(){
 function catchFish() {
     alert("Ты поймал рыбу!");
 }
+
+let username = document.getElementById("username");
+username.textContent = tg.initDataUnsafe?.user?.username;
+
+

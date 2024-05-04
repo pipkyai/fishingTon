@@ -45,3 +45,12 @@ div {
     height: 100px;
 }
 
+.username{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 300px;
+    height: 30px;
+    color: black;
+}
+
