@@ -28,13 +28,6 @@ div {
     display: block;
 }
 
-.hook{
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    width: 50px;
-    height: 50px;
-}
 
 .float{
     border-radius: 50px;
