@@ -10,11 +10,14 @@ function callMe(){
 }
 
 function catchFish() {
-    alert("Ты поймал рыбу!");
+    var video = document.getElementById('video');
+    let dur = video.duration;
+    let cur = video.currentTime;
+    if ((dur-cur)<1){
+        alert("Ты поймал рыбу!")
+    }else{
+        alert("Ты ничего не поймал!")
+    }
 }
-
-
-
-
 
 
