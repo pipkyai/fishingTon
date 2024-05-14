@@ -21,4 +21,10 @@ function catchFish() {
     }
 }
 
+function cast(){
+    document.getElementById("gif").style.display="block";
+    startTime = Math.floor(Date.now() / 100);
+    document.getElementById("rod").style.display="none";
+}
+
 

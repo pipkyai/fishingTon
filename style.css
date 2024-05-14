@@ -44,5 +44,15 @@ div {
     left: 40%;
     width: 100px;
     height: 100px;
+    display: none;
+}
+
+.rod{
+    border-radius: 50px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 100px;
+    height: 100px;
 }
 
