@@ -1,5 +1,6 @@
 const tg = window.Telegram.WebApp;
 
+
 var startTime = Math.floor(Date.now() / 100);
 
 window.onload = function() {
@@ -24,16 +25,17 @@ function catchFish() {
     }
 }
 
+
 function cast(){
+    document.getElementById("gif").src = "1.gif"+"?a="+Math.random();
+    document.getElementById("gif").style.display="block";
     document.getElementById("rod").style.display="none";
     startTime = Math.floor(Date.now() / 100);
-    document.getElementById("gif").style.display="block";
 }
 
 function stopCast(){
-    document.getElementById("gif").src = "https://i.ibb.co/G3g727F/112233.gif"+"?a="+Math.random();
+    document.getElementById("gif").src = "1.gif"+"?a="+Math.random();
     document.getElementById("gif").style.display="none";
-    startTime = Math.floor(Date.now() / 100);
     document.getElementById("rod").style.display="block";
 }
 
