@@ -19,7 +19,7 @@ function catchFish() {
         alert('Поймал!');
         stopCast();
     }else{
-        alert('Не поймал');
+        alert('Не поймал!');
         stopCast();
     }
 }
@@ -31,7 +31,7 @@ function cast(){
 }
 
 function stopCast(){
-    document.getElementById("gif").src = "1.gif"+"?a="+Math.random();
+    document.getElementById("gif").src = "https://ibb.co/WpSnyns"+"?a="+Math.random();
     document.getElementById("gif").style.display="none";
     startTime = Math.floor(Date.now() / 100);
     document.getElementById("rod").style.display="block";
