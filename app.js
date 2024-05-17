@@ -31,7 +31,7 @@ function cast(){
 }
 
 function stopCast(){
-    document.getElementById("gif").src = "https://ibb.co/WpSnyns"+"?a="+Math.random();
+    document.getElementById("gif").src = "https://i.ibb.co/G3g727F/112233.gif"+"?a="+Math.random();
     document.getElementById("gif").style.display="none";
     startTime = Math.floor(Date.now() / 100);
     document.getElementById("rod").style.display="block";
