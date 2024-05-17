@@ -15,7 +15,7 @@ function catchFish() {
     var catchTime = Math.floor(Date.now() / 100);
     var deltaTime = catchTime - startTime;
     // alert(deltaTime);
-    if ((deltaTime > 143)&&(deltaTime<156)) {
+    if ((deltaTime > 143)&&(deltaTime<160)) {
         alert('Поймал!');
         stopCast();
     }else{
