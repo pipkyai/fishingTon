@@ -2,6 +2,8 @@ const tg = window.Telegram.WebApp;
 
 
 var startTime = Math.floor(Date.now() / 100);
+var float = getFloat();
+
 
 window.onload = function() {
     callMe();
@@ -16,7 +18,7 @@ function catchFish() {
     var catchTime = Math.floor(Date.now() / 100);
     var deltaTime = catchTime - startTime;
     // alert(deltaTime);
-    if ((deltaTime > 143)&&(deltaTime<160)) {
+    if ((deltaTime > Number(float[1]))&&(deltaTime<Number(float[2]))) {
         alert('Поймал!');
         stopCast();
     }else{
@@ -27,16 +29,22 @@ function catchFish() {
 
 
 function cast(){
-    document.getElementById("gif").src = "1.gif"+"?a="+Math.random();
+    float = getFloat();
+    document.getElementById("gif").src = "gifs/" + float[0] + "?a=" + Math.random();
     document.getElementById("gif").style.display="block";
     document.getElementById("rod").style.display="none";
     startTime = Math.floor(Date.now() / 100);
 }
 
 function stopCast(){
-    document.getElementById("gif").src = "1.gif"+"?a="+Math.random();
+    document.getElementById("gif").src = "gifs/" + float[0] + "?a=" + Math.random();
     document.getElementById("gif").style.display="none";
     document.getElementById("rod").style.display="block";
 }
 
-
+function getFloat(){
+    const floats = ["1.gif/143/160", "2.gif/100/110"];
+    const random = Math.floor(Math.random() * floats.length);
+    const floatData = floats[random].split("/");
+    return floatData;
+}
