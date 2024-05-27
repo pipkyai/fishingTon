@@ -38,6 +38,16 @@ div {
     display: block;
 }
 
+.counter {
+    position: absolute;
+    top: 6%;
+    right: 7%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: black;
+}
+
 #username{
     position: absolute;
     top: 5%;
