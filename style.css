@@ -28,6 +28,16 @@ div {
     display: block;
 }
 
+.coinLogo {
+    border-radius: 50px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
 #username{
     position: absolute;
     top: 5%;
