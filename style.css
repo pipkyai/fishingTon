@@ -31,10 +31,10 @@ div {
 .coinLogo {
     border-radius: 50px;
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 40%;
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
     display: block;
 }
 
