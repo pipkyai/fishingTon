@@ -6,7 +6,8 @@ var float = getFloat();
 
 
 window.onload = function() {
-    callMe(); 
+    callMe();
+    cast();
 };
 
 function callMe(){
@@ -25,20 +26,23 @@ function catchFish() {
         stopCast();
     }else{
         alert('Не поймал!');
-        stopCast();
+        cast();
     }
+}
+
+function hideRod() {
+    document.getElementById("rod").style.display="none";
 }
 
 
 function cast(){
     float = getFloat();
-    document.getElementById("gif").src = "gifs/" + float[0] + "?a=" + Math.random();
-    document.getElementById("rod").style.display="none";
+    document.getElementById("gif").src = "gifs/" + float[0];
     startTime = Math.floor(Date.now() / 100);
 }
 
 function stopCast(){
-    document.getElementById("gif").src = "gifs/" + float[0] + "?a=" + Math.random();
+    document.getElementById("gif").src = "gifs/" + float[0];
     document.getElementById("rod").style.display="block";
 }
 
