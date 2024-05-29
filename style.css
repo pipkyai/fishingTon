@@ -67,6 +67,15 @@ div {
     display: none;
 }
 
+#myVideo{
+    border-radius: 50px;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    width: 100px;
+    height: 100px;
+}
+
 .rod{
     border-radius: 50px;
     position: absolute;
