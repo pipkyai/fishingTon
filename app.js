@@ -6,11 +6,11 @@ var float = getFloat();
 
 
 window.onload = function() {
-    callMe();
+    callMe(); 
 };
 
 function callMe(){
-    document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
+    document.getElementById("username").textContent='Hi ' +  tg.initDataUnsafe?.user?.username;
 }
 
 
