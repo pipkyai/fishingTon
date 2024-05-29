@@ -20,6 +20,8 @@ function catchFish() {
     // alert(deltaTime);
     if ((deltaTime > Number(float[1]))&&(deltaTime<Number(float[2]))) {
         alert('Поймал!');
+        var counter = document.getElementById("counter").textContent;
+        document.getElementById("counter").textContent = Number(counter) + 1;
         stopCast();
     }else{
         alert('Не поймал!');

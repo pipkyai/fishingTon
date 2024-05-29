@@ -38,7 +38,7 @@ div {
     display: block;
 }
 
-.counter {
+#counter {
     position: absolute;
     top: 6%;
     right: 10%;
