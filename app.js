@@ -33,14 +33,12 @@ function catchFish() {
 function cast(){
     float = getFloat();
     document.getElementById("gif").src = "gifs/" + float[0] + "?a=" + Math.random();
-    document.getElementById("gif").style.display="block";
     document.getElementById("rod").style.display="none";
     startTime = Math.floor(Date.now() / 100);
 }
 
 function stopCast(){
     document.getElementById("gif").src = "gifs/" + float[0] + "?a=" + Math.random();
-    document.getElementById("gif").style.display="none";
     document.getElementById("rod").style.display="block";
 }
 
