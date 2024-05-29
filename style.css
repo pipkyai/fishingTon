@@ -73,6 +73,6 @@ div {
     left: 40%;
     width: 100px;
     height: 100px;
-    display: block;
+    opacity: 1;
 }
 
