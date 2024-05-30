@@ -22,6 +22,7 @@ function klik() {
 
     if (opa === "1") {
         document.getElementById("rod").style.opacity = 0;
+        document.getElementById('increment').style.display = "none";
 
         }else{
         document.getElementById("rod").style.opacity = 1;
@@ -30,10 +31,9 @@ function klik() {
         
         var x = (duration/float[2] - Math.floor(duration/float[2])).toFixed(2);
         if((x > 0.9)&&(x < 1)){
-            alert("Поймал!");
             counterIncrement();
         }else{
-            alert("Не поймал!");
+            // alert("Не поймал!");
         }
         load();
     }
@@ -55,7 +55,10 @@ function getFloat(){
 }
 
 function counterIncrement(){
+
     var x = Number(document.getElementById("counter").textContent);
     x++;
     document.getElementById("counter").textContent = x;
+    document.getElementById('increment').style.display = "block";
+
 }

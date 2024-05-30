@@ -31,7 +31,7 @@ div {
 .coinLogo {
     border-radius: 50px;
     position: absolute;
-    top: 5%;
+    top: 4%;
     right: 5%;
     width: 30px;
     height: 30px;
@@ -47,6 +47,20 @@ div {
     display: block;
     color: black;
 }
+
+#increment {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    display: none;
+    animation-name: animInc;
+    animation-duration: 2s;  
+}
+
+@keyframes animInc {
+    from {top: 35%; color: green; opacity: 100;}
+    to {top: 15%; color: rgb(0, 250, 0); opacity: 0;}
+  }
 
 #username{
     position: absolute;
