@@ -33,7 +33,7 @@ function klik() {
         var catchedTime = Math.floor(Date.now() / 100);
         var duration = catchedTime - startTime;
         
-        var x = (duration/float[2] - Math.floor(duration/float[2])).toFixed(2);
+        var x = (duration/float[1] - Math.floor(duration/float[1])).toFixed(2);
         if((x > 0.9)&&(x < 1)){
             counterIncrement();
         }else{
@@ -52,7 +52,7 @@ function load(){
 
 
 function getFloat(){
-    const floats = ["1.gif/143/160", "2.gif/100/109"];
+    const floats = ["1.gif/160", "2.gif/109", "3.gif/93", "4.gif/92", "6.gif/65", "7.gif/125", "8.gif/79", "9.gif/120", "10.gif/61", "11.gif/111"];
     const random = Math.floor(Math.random() * floats.length);
     const floatData = floats[random].split("/");
     return floatData;
