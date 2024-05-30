@@ -34,8 +34,8 @@ function klik() {
         var duration = catchedTime - startTime;
         // alert("гиф номер: " + float[0] + " " + duration + "ms. " );
         
-        var x = (duration/float[1] - Math.floor(duration/float[1])).toFixed(2);
-        if((x > 0.9)&&(x < 1)){
+        var x = (duration/float[2] - Math.floor(duration/float[2])).toFixed(2);
+        if((x > (float[1]/float[2]))&&(x < 1)){
             counterIncrement();
         }else{
             // alert("Не поймал!");
@@ -53,7 +53,7 @@ function load(){
 
 
 function getFloat(){
-    const floats = ["1.gif/150/160", "2.gif/101/109", "3.gif/85/97", "4.gif/84/92", "6.gif/59/67", "7.gif/115/133", "8.gif/70/81", "9.gif/121/132", "10.gif/55/63", "11.gif/100/113"];
+    const floats = ["1.gif/148/160", "2.gif/98/110", "3.gif/83/97", "4.gif/83/92", "6.gif/57/67", "7.gif/114/133", "8.gif/69/81", "9.gif/120/133", "10.gif/54/64", "11.gif/100/113"];
     const random = Math.floor(Math.random() * floats.length);
     const floatData = floats[random].split("/");
     return floatData;
