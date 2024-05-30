@@ -32,14 +32,14 @@ function klik() {
         document.getElementById("rod").style.opacity = 1;
         var catchedTime = Math.floor(Date.now() / 100);
         var duration = catchedTime - startTime;
-        // alert("гиф номер: " + float[0] + " " + duration + "ms. " );
+        alert("гиф номер: " + float[0] + " " + duration + "ms. " );
         
-        var x = (duration/float[1] - Math.floor(duration/float[1])).toFixed(2);
-        if((x > 0.9)&&(x < 1)){
-            counterIncrement();
-        }else{
-            // alert("Не поймал!");
-        }
+        // var x = (duration/float[1] - Math.floor(duration/float[1])).toFixed(2);
+        // if((x > 0.9)&&(x < 1)){
+        //     counterIncrement();
+        // }else{
+        //     // alert("Не поймал!");
+        // }
         load();
     }
 }
@@ -53,7 +53,7 @@ function load(){
 
 
 function getFloat(){
-    const floats = ["1.gif/160", "2.gif/109", "3.gif/97", "4.gif/92", "6.gif/66", "7.gif/133", "8.gif/81", "9.gif/132", "10.gif/63", "11.gif/112"];
+    const floats = ["1.gif//160", "2.gif//109", "3.gif//97", "4.gif//92", "6.gif//65", "7.gif//133", "8.gif//81", "9.gif//132", "10.gif//63", "11.gif//112"];
     const random = Math.floor(Math.random() * floats.length);
     const floatData = floats[random].split("/");
     return floatData;
