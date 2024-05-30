@@ -4,6 +4,10 @@ const tg = window.Telegram.WebApp;
 var startTime = Math.floor(Date.now() / 100);
 var float = getFloat();
 
+if (window["Telegram"]) {
+    window["Telegram"].WebApp.ready();
+    window["Telegram"].WebApp.expand();
+}
 
 window.onload = function() {
     callMe();
