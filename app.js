@@ -26,7 +26,7 @@ function klik() {
 
     if (opa === "1") {
         document.getElementById("rod").style.opacity = 0;
-        document.getElementById('increment').style.display = "none";
+        document.getElementById('fish').style.display = "none";
 
         }else{
         document.getElementById("rod").style.opacity = 1;
@@ -53,7 +53,7 @@ function load(){
 
 
 function getFloat(){
-    const floats = ["1.gif/148/160", "2.gif/98/110", "3.gif/83/97", "4.gif/78/90", "6.gif/57/67", "7.gif/109/130", "8.gif/64/80", "9.gif/110/133", "10.gif/54/66", "11.gif/95/110"];
+    const floats = ["1.gif/148/160", "2.gif/98/110", "3.gif/78/97", "4.gif/78/90", "6.gif/57/67", "7.gif/109/130", "8.gif/64/80", "9.gif/110/133", "10.gif/54/66", "11.gif/95/110"];
     const random = Math.floor(Math.random() * floats.length);
     const floatData = floats[random].split("/");
     return floatData;
@@ -62,8 +62,10 @@ function getFloat(){
 function counterIncrement(){
 
     var x = Number(document.getElementById("counter").textContent);
-    x++;
+    var random = Math.floor(Math.random() * 20);
+    x = x + random;
     document.getElementById("counter").textContent = x;
-    document.getElementById('increment').style.display = "block";
+    document.getElementById("fish").textContent = " +карась " + random + "кг. ";
+    document.getElementById('fish').style.display = "block";
 
 }
