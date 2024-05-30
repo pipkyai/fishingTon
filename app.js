@@ -32,14 +32,14 @@ function klik() {
         document.getElementById("rod").style.opacity = 1;
         var catchedTime = Math.floor(Date.now() / 100);
         var duration = catchedTime - startTime;
-        alert("гиф номер: " + float[0] + " " + duration + "ms. " );
+        // alert("гиф номер: " + float[0] + " " + duration + "ms. " );
         
-        // var x = (duration/float[1] - Math.floor(duration/float[1])).toFixed(2);
-        // if((x > 0.9)&&(x < 1)){
-        //     counterIncrement();
-        // }else{
-        //     // alert("Не поймал!");
-        // }
+        var x = (duration/float[1] - Math.floor(duration/float[1])).toFixed(2);
+        if((x > 0.9)&&(x < 1)){
+            counterIncrement();
+        }else{
+            // alert("Не поймал!");
+        }
         load();
     }
 }
