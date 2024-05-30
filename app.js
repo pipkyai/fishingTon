@@ -53,7 +53,7 @@ function load(){
 
 
 function getFloat(){
-    const floats = ["1.gif/148/160", "2.gif/98/110", "3.gif/83/97", "4.gif/83/92", "6.gif/57/67", "7.gif/114/133", "8.gif/69/81", "9.gif/120/133", "10.gif/54/64", "11.gif/100/113"];
+    const floats = ["1.gif/148/160", "2.gif/98/110", "3.gif/83/97", "4.gif/83/92", "6.gif/57/67", "7.gif/109/130", "8.gif/69/81", "9.gif/110/133", "10.gif/54/66", "11.gif/100/113"];
     const random = Math.floor(Math.random() * floats.length);
     const floatData = floats[random].split("/");
     return floatData;
