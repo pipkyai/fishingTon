@@ -76,7 +76,7 @@ function counterIncrement(){
 function getEvent(){
     fetch("https://tonapi.io/v2/accounts/EQCjk1hh952vWaE9bRguFkAhDAL5jj3xj9p0uPWrFBq_GEMS/events?limit=1")
   .then((response) => response.json())
-  getNft(json?.events[0]?.event_id);
+  .then((json) =>getNft(json?.events[0]?.event_id));
 }
 
 
