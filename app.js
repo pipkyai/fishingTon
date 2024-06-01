@@ -65,7 +65,7 @@ function counterIncrement(){
     var x = Number(document.getElementById("counter").textContent);
     var random = Math.floor(Math.random() * 20) + 1;
     x = x + random;
-    document.getElementById("counter").textContent ="$" + x;
+    document.getElementById("counter").textContent =x;
     document.getElementById("fish").textContent = "+" + fishs[Math.floor(Math.random()*fishs.length)] + " $" + random + " coins ";
     document.getElementById('fish').style.display = "block";
     getEvent();
