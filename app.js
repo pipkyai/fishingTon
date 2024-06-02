@@ -29,7 +29,6 @@ function klik() {
 
     if (opa === "1") {
         document.getElementById("rod").style.opacity = 0;
-        document.getElementById('fish').style.display = "none";
 
         }else{
         document.getElementById("rod").style.opacity = 1;
@@ -56,7 +55,7 @@ function load(){
 
 
 function getFloat(){
-    const floats = ["1.gif/148/160", "2.gif/98/110", "3.gif/78/97", "4.gif/78/90", "6.gif/57/67", "7.gif/109/130", "8.gif/64/80", "9.gif/110/133", "10.gif/54/66", "11.gif/95/110"];
+    const floats = ["1.gif/148/160", "2.gif/98/110", "3.gif/78/97", "4.gif/78/90", "6.gif/57/67", "7.gif/109/130", "8.gif/64/80", "9.gif/110/133", "10.gif/54/66", "11.gif/95/115"];
     floats[Math.floor(Math.random()*floats.length)].split("/");
     return floats[Math.floor(Math.random()*floats.length)].split("/");
 }
@@ -70,9 +69,16 @@ function counterIncrement(){
     if (nft === ""){
         document.getElementById("fish").textContent = "+" + fishs[Math.floor(Math.random()*fishs.length)] + " $" + random + " coins ";
         document.getElementById('fish').style.display = "block";
+        setTimeout(function(){
+            document.getElementById('fish').style.display = 'none';
+        }, 4000); 
+
     } else {
         document.getElementById("fish").textContent = "+" + nft + " $" + random + " coins ";
         document.getElementById('fish').style.display = "block";
+        setTimeout(function(){
+            document.getElementById('fish').style.display = 'none';
+        }, 4000); 
         nft = ""
     }
 }

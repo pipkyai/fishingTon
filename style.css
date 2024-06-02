@@ -54,14 +54,15 @@ div {
     top: 20%;
     left: 30%;
     font-size: 3ch;
+    opacity: 0;
     display: none;
     animation-name: animInc;
     animation-duration: 4s;
 }
 
 @keyframes animInc {
-    from {top: 20%; color: rgb(0, 0, 0); opacity: 100;}
-    to {top: 10%; color: rgb(205, 204, 221); opacity: 0; display: none}
+    from {top: 20%; color: rgb(0, 0, 0); opacity: 1;}
+    to {top: 10%; color: rgb(205, 204, 221); opacity: 0;}
   }
 
 #username{
