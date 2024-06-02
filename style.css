@@ -51,11 +51,12 @@ div {
 
 #fish {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 30%;
+    font-size: 3ch;
     display: none;
     animation-name: animInc;
-    animation-duration: 2s;  
+    animation-duration: 5s;
 }
 
 @keyframes animInc {
