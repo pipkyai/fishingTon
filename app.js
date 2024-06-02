@@ -69,11 +69,12 @@ function counterIncrement(){
     document.getElementById("counter").textContent = x;
     if (nft === ""){
         document.getElementById("fish").textContent = "+" + fishs[Math.floor(Math.random()*fishs.length)] + " $" + random + " coins ";
+        document.getElementById('fish').style.display = "block";
     } else {
         document.getElementById("fish").textContent = "+" + nft + " $" + random + " coins ";
+        document.getElementById('fish').style.display = "block";
         nft = ""
     }
-    document.getElementById('fish').style.display = "block";
 }
 
 
