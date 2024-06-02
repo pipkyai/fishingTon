@@ -73,7 +73,7 @@ div {
 }
 
 .float{
-    border-radius: 50px;
+    border-radius: 60px;
     position: absolute;
     top: 30%;
     left: 30%;
@@ -82,7 +82,7 @@ div {
 }
 
 .rod{
-    border-radius: 50px;
+    border-radius: 60px;
     position: absolute;
     top: 30%;
     left: 30%;
