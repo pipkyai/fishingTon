@@ -56,12 +56,12 @@ div {
     font-size: 3ch;
     display: none;
     animation-name: animInc;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 
 @keyframes animInc {
-    from {top: 35%; color: rgb(0, 0, 0); opacity: 100;}
-    to {top: 15%; color: rgb(205, 204, 221); opacity: 0;}
+    from {top: 20%; color: rgb(0, 0, 0); opacity: 100;}
+    to {top: 10%; color: rgb(205, 204, 221); opacity: 0;}
   }
 
 #username{
@@ -96,7 +96,7 @@ div {
     border-radius: 60px;
     position: absolute;
     bottom: 10%;
-    left: 45%;
+    left: 35%;
     width: 120px;
     height: 30px;
 }
