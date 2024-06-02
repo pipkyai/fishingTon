@@ -29,8 +29,11 @@ function klik() {
 
     if (opa === "1") {
         document.getElementById("rod").style.opacity = 0;
+        document.getElementById("catch").textContent = "Поймать рыбу!";
+
 
         }else{
+        document.getElementById("catch").textContent = "Закинуть удочку!";
         document.getElementById("rod").style.opacity = 1;
         var catchedTime = Math.floor(Date.now() / 100);
         var duration = catchedTime - startTime;
