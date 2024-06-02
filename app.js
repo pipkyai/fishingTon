@@ -4,6 +4,7 @@ const tg = window.Telegram.WebApp;
 var startTime = Math.floor(Date.now() / 100);
 var float = [];
 const fishs = ["карась" ,"плотва", "лещ", "карп", "окунь", "ёрш"];
+var nft = "";
 
 
 if (window["Telegram"]) {
@@ -61,22 +62,26 @@ function getFloat(){
 }
 
 function counterIncrement(){
-
+    getEvent();
     var x = Number(document.getElementById("counter").textContent);
     var random = Math.floor(Math.random() * 20) + 1;
     x = x + random;
-    document.getElementById("counter").textContent =x;
-    document.getElementById("fish").textContent = "+" + fishs[Math.floor(Math.random()*fishs.length)] + " $" + random + " coins ";
+    document.getElementById("counter").textContent = x;
+    if (nft === ""){
+        document.getElementById("fish").textContent = "+" + fishs[Math.floor(Math.random()*fishs.length)] + " $" + random + " coins ";
+    } else {
+        document.getElementById("fish").textContent = "+" + nft + " $" + random + " coins ";
+        nft = ""
+    }
     document.getElementById('fish').style.display = "block";
-    getEvent();
 }
 
 
 
 function getEvent(){
-    fetch("https://tonapi.io/v2/accounts/EQCjk1hh952vWaE9bRguFkAhDAL5jj3xj9p0uPWrFBq_GEMS/events?limit=1")
+    fetch("https://tonapi.io/v2/accounts/EQCjk1hh952vWaE9bRguFkAhDAL5jj3xj9p0uPWrFBq_GEMS/events?limit=10")
   .then((response) => response.json())
-  .then((json) =>alert(json?.events[0]?.event_id));
+  .then((json) =>getNft(json?.events[9]?.event_id));
 }
 
 
@@ -84,5 +89,9 @@ function getNft(event){
     console.log(event)
     fetch("https://tonapi.io/v2/events/" + event)
   .then((response) => response.json())
-  .then((json) => alert(json.actions[0].NftPurchase.nft.collection.name))
+  .then((json) => printNft(json.actions[0].NftPurchase.nft.collection.name))
+}
+
+function printNft(catchedNft){
+    nft = String(catchedNft);
 }
