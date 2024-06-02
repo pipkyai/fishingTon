@@ -51,8 +51,8 @@ div {
 
 #fish {
     position: absolute;
-    top: 35%;
-    left: 40%;
+    top: 30%;
+    left: 30%;
     display: none;
     animation-name: animInc;
     animation-duration: 2s;  
@@ -77,8 +77,8 @@ div {
     position: absolute;
     top: 30%;
     left: 30%;
-    width: 105px;
-    height: 105px;
+    width: 120px;
+    height: 120px;
 }
 
 .rod{
@@ -86,8 +86,8 @@ div {
     position: absolute;
     top: 30%;
     left: 30%;
-    width: 105px;
-    height: 105px;
+    width: 120px;
+    height: 120px;
     opacity: 1;
 }
 
