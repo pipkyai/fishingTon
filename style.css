@@ -75,8 +75,8 @@ div {
 .float{
     border-radius: 50px;
     position: absolute;
-    top: 35%;
-    left: 35%;
+    top: 30%;
+    left: 30%;
     width: 105px;
     height: 105px;
 }
@@ -84,8 +84,8 @@ div {
 .rod{
     border-radius: 50px;
     position: absolute;
-    top: 35%;
-    left: 35%;
+    top: 30%;
+    left: 30%;
     width: 105px;
     height: 105px;
     opacity: 1;
