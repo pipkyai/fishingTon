@@ -91,3 +91,12 @@ div {
     opacity: 1;
 }
 
+#catch{
+    border-radius: 60px;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    width: 120px;
+    height: 30px;
+}
+
