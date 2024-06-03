@@ -18,8 +18,8 @@ window.onload = function() {
 };
 
 
-this.storage.setItem('fish', '12', callback);
-var a = JSON.stringify(this.storage.getItem('fish'));
+tg.CloudStorage.setItem('fish', '12', callback);
+var a = JSON.stringify(tg.CloudStorage.getItem('fish'));
 
 alert(a);
 
