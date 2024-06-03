@@ -17,7 +17,7 @@ window.onload = function() {
     load();
 };
 
-alert(tg.platform);
+alert(tg.CloudStorage);
 
 function callMe(){
     document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
