@@ -76,21 +76,21 @@ div {
 }
 
 .float{
-    border-radius: 60px;
+    border-radius: 50%;
     position: absolute;
     top: 30%;
     left: 30%;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
 }
 
 .rod{
-    border-radius: 60px;
+    border-radius: 50%;
     position: absolute;
     top: 30%;
     left: 30%;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     opacity: 1;
 }
 
