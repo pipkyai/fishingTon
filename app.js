@@ -17,8 +17,8 @@ window.onload = function() {
     load();
 };
 
-tg.CloudStorage.sessionStorageSet("fish", "12");
-var a = JSON.stringify(tg.CloudStorage.sessionStorageGet("fish"));
+tg.sessionStorageSet("fish", "12");
+var a = JSON.stringify(tg.sessionStorageGet("fish"));
 
 alert(a);
 
