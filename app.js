@@ -17,10 +17,11 @@ window.onload = function() {
     load();
 };
 
-tg.CloudStorage.setItem("fish", "12");
-var a = JSON.stringify(tg.CloudStorage.getKeys());
 
-alert(tg.version);
+tg.CloudStorage.setItem('fish', '12');
+var a = JSON.stringify(tg.CloudStorage.getItem('fish'));
+
+alert(a);
 
 function callMe(){
     document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
