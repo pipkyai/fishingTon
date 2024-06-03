@@ -18,7 +18,7 @@ window.onload = function() {
 };
 
 tg.CloudStorage.setItem('name','Raychel');
-alert(tg.CloudStorage.getItem("name"));
+alert(tg.CloudStorage.getKeys);
 
 function callMe(){
     document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
