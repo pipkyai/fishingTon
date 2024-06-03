@@ -94,17 +94,6 @@ div {
     opacity: 1;
 }
 
-/* #catch{
-    background-image: url("https://sun1-25.userapi.com/s/v1/if1/16HqhUPxjYgmG8WJhCgewRz0yZI2izEK5N3abogygT4D4ci8YTZn7IQDd0c2NcF3WvGzOJCh.jpg?size=900x900&quality=96&crop=0,0,900,900&ava=1");
-    background-size:contain; 
-    border-radius: 60px;
-    position: absolute;
-    bottom: 10%;
-    left: 35%;
-    width: 90px;
-    height: 90px;
-} */
-
 
 .btn {
   display: block;
@@ -138,7 +127,7 @@ div {
 }
 
 .btn.is-clicked {
-  background: linear-gradient(to bottom, gray 0%, rgb(203, 196, 196) 100%);
+  background: linear-gradient(to bottom, rgb(14, 21, 54) 0%, rgb(114, 115, 164) 100%);
 }
 .btn.is-clicked:before {
   animation: blastOut 1s;
