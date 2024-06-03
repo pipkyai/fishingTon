@@ -17,8 +17,7 @@ window.onload = function() {
     load();
 };
 
-tg.CloudStorage.setItem('name','Raychel');
-alert(tg.CloudStorage.getKeys);
+var a = tg.CloudStorage.setItem("fish", 12);
 
 function callMe(){
     document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
@@ -26,6 +25,7 @@ function callMe(){
 
 
 function klik() {
+    alert(tg.CloudStorage.getKeys);
     var element = document.getElementById('rod'),
     style = window.getComputedStyle(element),
     opa = style.getPropertyValue('opacity');
