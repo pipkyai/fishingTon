@@ -21,7 +21,7 @@ window.onload = function() {
 tg.CloudStorage.setItem('fish', '12', callback);
 var a = JSON.stringify(tg.CloudStorage.getItem('fish'));
 
-alert(tg.WebAppUser);
+alert(a);
 
 function callMe(){
     document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
