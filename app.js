@@ -17,6 +17,7 @@ window.onload = function() {
     load();
 };
 
+tg.CloudStorage.setItem('name','Raychel');
 alert(tg.CloudStorage);
 
 function callMe(){
