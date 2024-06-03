@@ -20,7 +20,7 @@ window.onload = function() {
 tg.CloudStorage.setItem("fish", "12");
 var a = JSON.stringify(tg.CloudStorage.getKeys());
 
-alert(a);
+alert(tg.version);
 
 function callMe(){
     document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
