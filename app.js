@@ -105,3 +105,9 @@ function getNft(event){
 function printNft(catchedNft){
     nft = String(catchedNft);
 }
+
+$(function() {
+    $('.btn').click(function() {
+      $(this).toggleClass('is-clicked');
+    });
+  });
