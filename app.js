@@ -17,10 +17,7 @@ window.onload = function() {
     load();
 };
 
-tg.CloudStorage.setItem("fish", "12");
-var a = JSON.stringify(tg.CloudStorage.getItem("fish"));
 
-alert(a);
 
 function callMe(){
     document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
@@ -28,6 +25,7 @@ function callMe(){
 
 
 function klik() {
+    tg.CloudStorage.setItem("fish", "12");
     var element = document.getElementById('rod'),
     style = window.getComputedStyle(element),
     opa = style.getPropertyValue('opacity');
@@ -46,6 +44,8 @@ function klik() {
         
         var x = (duration/float[2] - Math.floor(duration/float[2])).toFixed(2);
         if((x > (float[1]/float[2]))&&(x < 1)){
+            var a = JSON.stringify(tg.CloudStorage.getItem("fish"));
+            alert(a);
             load();
             counterIncrement();
         }else{
