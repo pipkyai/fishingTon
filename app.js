@@ -17,11 +17,11 @@ window.onload = function() {
     load();
 };
 
-    
-// tg.CloudStorage.setItem('fish', '12');
-// var a = JSON.stringify(tg.CloudStorage.getItem('fish'));
 
+tg.CloudStorage.setItem('fish', '12', callback);
+var a = JSON.stringify(tg.CloudStorage.getItem('fish'));
 
+alert(tg.WebAppUser);
 
 function callMe(){
     document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
@@ -32,7 +32,6 @@ function klik() {
     var element = document.getElementById('rod'),
     style = window.getComputedStyle(element),
     opa = style.getPropertyValue('opacity');
-    alert(JSON.stringify(tg.CloudStorage.getItem('fish')));
 
     if (opa === "1") {
         document.getElementById("rod").style.opacity = 0;
@@ -61,7 +60,6 @@ function load(){
     float = getFloat();
     document.getElementById("gif").src = "gifs/" + float[0];
     startTime = Math.floor(Date.now() / 100);
-    tg.CloudStorage.setItem('fish', '12');
 }
 
 
