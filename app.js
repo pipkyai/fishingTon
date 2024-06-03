@@ -5,6 +5,7 @@ var startTime = Math.floor(Date.now() / 100);
 var float = [];
 const fishs = ["карась" ,"плотва", "лещ", "карп", "окунь", "ёрш"];
 var nft = "";
+var a = "";
 
 
 if (window["Telegram"]) {
@@ -19,9 +20,7 @@ window.onload = function() {
 
 
 tg.CloudStorage.setItem('fish', '12');
-var a = JSON.stringify(tg.CloudStorage.getKeys());
 
-alert(a);
 
 function callMe(){
     document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
@@ -29,6 +28,8 @@ function callMe(){
 
 
 function klik() {
+    a = JSON.stringify(tg.CloudStorage.getKeys());
+
     var element = document.getElementById('rod'),
     style = window.getComputedStyle(element),
     opa = style.getPropertyValue('opacity');
@@ -47,6 +48,7 @@ function klik() {
         
         var x = (duration/float[2] - Math.floor(duration/float[2])).toFixed(2);
         if((x > (float[1]/float[2]))&&(x < 1)){
+            alert(a);
             load();
             counterIncrement();
         }else{
