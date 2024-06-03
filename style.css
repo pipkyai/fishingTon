@@ -78,19 +78,19 @@ div {
 .float{
     border-radius: 50%;
     position: absolute;
-    top: 30%;
+    top: 31%;
     left: 30%;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
 }
 
 .rod{
     border-radius: 50%;
     position: absolute;
-    top: 30%;
+    top: 31%;
     left: 30%;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     opacity: 1;
 }
 
@@ -136,11 +136,11 @@ div {
 @keyframes pulse {
   from {
     transform: scale(1);
-    opacity: .5;
+    opacity: .4;
 
   }
   to {
-    transform: scale(1.5);
+    transform: scale(1.4);
     opacity: 0;
   }
 }
@@ -148,10 +148,10 @@ div {
 @keyframes blastOut {
   from {
     transform: scale(0.1);
-    opacity: .5;
+    opacity: .4;
   }
   to {
-    transform: scale(5);
+    transform: scale(4);
     opacity: 0;
   }
 }
