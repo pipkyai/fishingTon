@@ -3,8 +3,6 @@ const tg = window.Telegram.WebApp;
 
 var startTime = Math.floor(Date.now() / 100);
 var float = [];
-const fishs = ["карась" ,"плотва", "лещ", "карп", "окунь", "ёрш"];
-var nft = "";
 
 
 if (window["Telegram"]) {
@@ -19,7 +17,7 @@ window.onload = function() {
 
 
 function callMe(){
-    document.getElementById("username").textContent='Привет ' +  tg.initDataUnsafe?.user?.username;
+    document.getElementById("username").textContent='Welcome ' +  tg.initDataUnsafe?.user?.username;
 }
 
 
@@ -34,7 +32,7 @@ function klik() {
         document.getElementById("catch").textContent = "Поймать рыбу!";
 
 
-        }else{
+    }else{
         document.getElementById("catch").textContent = "Закинуть удочку!";
         document.getElementById("rod").style.opacity = 1;
         var catchedTime = Math.floor(Date.now() / 100);
@@ -66,47 +64,18 @@ function getFloat(){
 }
 
 function counterIncrement(){
-    getEvent();
     var x = Number(document.getElementById("counter").textContent);
     var random = Math.floor(Math.random() * 20) + 1;
     x = x + random;
     document.getElementById("counter").textContent = x;
-    if (nft === ""){
-        document.getElementById("fish").textContent = "+" + fishs[Math.floor(Math.random()*fishs.length)] + " $" + random + " coins ";
-        document.getElementById('fish').style.display = "block";
-        setTimeout(function(){
-            document.getElementById('fish').style.display = 'none';
-        }, 4000); 
+    document.getElementById("fish").textContent = "+" + random + " coins ";
+    document.getElementById('fish').style.display = "block";
 
-    } else {
-        document.getElementById("fish").textContent = "+" + nft + " $" + random + " coins ";
-        document.getElementById('fish').style.display = "block";
-        setTimeout(function(){
-            document.getElementById('fish').style.display = 'none';
-        }, 4000); 
-        nft = ""
-    }
+    setTimeout(function(){
+        document.getElementById('fish').style.display = 'none';
+    }, 4000); 
 }
 
-
-
-function getEvent(){
-    fetch("https://tonapi.io/v2/accounts/EQCjk1hh952vWaE9bRguFkAhDAL5jj3xj9p0uPWrFBq_GEMS/events?limit=10")
-  .then((response) => response.json())
-  .then((json) =>getNft(json?.events[9]?.event_id));
-}
-
-
-function getNft(event){
-    console.log(event)
-    fetch("https://tonapi.io/v2/events/" + event)
-  .then((response) => response.json())
-  .then((json) => printNft(json.actions[0].NftPurchase.nft.collection.name))
-}
-
-function printNft(catchedNft){
-    nft = String(catchedNft);
-}
 
 $(function() {
     $('.btn').click(function() {
