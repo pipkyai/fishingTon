@@ -18,11 +18,12 @@ window.onload = function() {
 
 function callMe(){
     document.getElementById("username").textContent='Welcome ' +  tg.initDataUnsafe?.user?.username;
+    // tg.CloudStorage.setItem('apples', '2');
+    alert(tg.version);
 }
 
 
 function klik() {
-
     var element = document.getElementById('rod'),
     style = window.getComputedStyle(element),
     opa = style.getPropertyValue('opacity');
@@ -33,6 +34,8 @@ function klik() {
 
 
     }else{
+        tg.CloudStorage.SetItem('apples', '2');
+
         document.getElementById("catch").textContent = "Закинуть удочку!";
         document.getElementById("rod").style.opacity = 1;
         var catchedTime = Math.floor(Date.now() / 100);
