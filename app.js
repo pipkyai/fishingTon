@@ -18,12 +18,13 @@ window.onload = function() {
 
 function callMe(){
     document.getElementById("username").textContent='Welcome ' +  tg.initDataUnsafe?.user?.username;
-    // tg.CloudStorage.setItem('apples', '2');
+    tg.CloudStorage.setItem('apples', '2');
     alert(tg.version);
 }
 
 
 function klik() {
+    alert(tg.CloudStorage.getKeys());
     var element = document.getElementById('rod'),
     style = window.getComputedStyle(element),
     opa = style.getPropertyValue('opacity');
