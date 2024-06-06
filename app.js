@@ -24,7 +24,7 @@ function callMe(){
 
 
 function klik() {
-    alert(JSON.stringify(tg.CloudStorage.getItem()));
+    alert(JSON.stringify(tg.CloudStorage.getKeys()));
     var element = document.getElementById('rod'),
     style = window.getComputedStyle(element),
     opa = style.getPropertyValue('opacity');
